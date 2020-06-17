@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "72801177201",
+    "firebase_url": "https://fur-ball-story.firebaseio.com",
+    "project_id": "fur-ball-story",
+    "storage_bucket": "fur-ball-story.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:72801177201:android:fe0433764eca1590b3d5d0",
+        "android_client_info": {
+          "package_name": "com.example.furballstory"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "72801177201-aj11q91k3nib1o0t8khigtdcts0m56ga.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDo02jSJoOUAcgyiF_QKOcZgrnew2-Ns-s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "72801177201-aj11q91k3nib1o0t8khigtdcts0m56ga.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

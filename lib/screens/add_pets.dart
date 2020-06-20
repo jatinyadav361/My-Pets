@@ -39,8 +39,8 @@ class _AddPetState extends State<AddPet> {
     });
   }
 
-  Future uploadFile(String id,String collection) async {
-    String fileName = id;
+  Future uploadFile(String id,String name,String collection) async {
+    String fileName = name+id;
     StorageReference reference = FirebaseStorage.instance.ref().child(fileName);
     StorageUploadTask uploadTask =  reference.putFile(_image);
     StorageTaskSnapshot storageTaskSnapshot;
@@ -235,7 +235,7 @@ class _AddPetState extends State<AddPet> {
                               loading = true;
                             });
                             if(isSelected[0]==true) {
-                              await uploadFile('${cats.length}','cats');
+                              await uploadFile('${cats.length}','cat','cats');
                               var result = await DatabaseService()
                                   .updateUserDataCat(_petName, _breed,_age,'${cats.length}',_photoUrl );
                               if (result != null) {
@@ -252,7 +252,7 @@ class _AddPetState extends State<AddPet> {
                                 });
                               }
                             } else {
-                              await uploadFile('${dogs.length}','dogs');
+                              await uploadFile('${dogs.length}','dog','dogs');
                               var result = await DatabaseService()
                                   .updateUserDataDog(_petName, _breed,_age, '${dogs.length}',_photoUrl);
                               if (result != null) {
